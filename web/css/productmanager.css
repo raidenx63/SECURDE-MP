@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*SPACE*/
+.space{
+	margin-bottom:20px;
+}
+/*SPACE*/
+/*BUTTONS*/
+#addbutton{
+	background:#2268E4;
+	margin-left:60px;
+	color:#FFFFFF;
+}
+#editbutton{
+	background:#0CAF19;
+	margin-left:20px;
+	color:#FFFFFF;
+}
+#deletebutton{
+	background:#BF0C0C;
+	color:#FFFFFF;
+}
+/*BUTTONS*/
+.thumbnail{
+	height:250px;	
+	font-size:12px;
+	padding-bottom:10px;
+}

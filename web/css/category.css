@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*SPACE*/
+.space{
+	margin-bottom:20px;
+}
+/*SPACE*/
+/*BUTTONS*/
+#buybutton{
+	background:#565C57;
+	margin-left:20px;
+	color:#FFFFFF;
+}
+#reviewbutton{
+	background:#D8D72A;
+	color:#FFFFFF;
+}
+/*BUTTONS*/
+.thumbnail{
+	height:250px;	
+	font-size:12px;
+}

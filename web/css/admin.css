@@ -1,0 +1,19 @@
+.container h2{
+	margin-left: 40px;	
+	color: #fff;
+}
+.container{
+	background-color: #666;
+	min-width:100%;
+}
+#content .row{
+	padding : 2px;
+	border: solid 2px #000;
+	margin-top: 50px;
+	margin-left:40px;
+	margin-right:40px;
+}
+
+#mainContainer{
+	width:100%;
+}
