@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*HORIZONTAL SCROLLBAR*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*HORIZONTAL SCROLLBAR*/
+/*SPACE*/
+.space{
+	margin-bottom:10px;
+}
+/*SPACE*/
+/*CATEGORIES*/
+.firstcategory{
+	text-align:center;
+	margin-left:1.6%; /*responsive divs required % ata instead of px*/
+	margin-bottom:0.5%;
+	padding-bottom:1%;
+	background-image:url("../assets/images/img_bootsbanner.jpg");
+	width: 48%;
+	padding-top:17%;
+	display:inline-block;float:none;
+}
+.secondcategory{
+	text-align:center;
+	margin-left:0.5%;
+	margin-bottom:0.5%;
+	padding-bottom:1%;
+	background-image:url("../assets/images/img_shoesbanner.jpg");
+	width: 48%;
+	padding-top:17%;
+	display:inline-block;float:none;
+}
+.thirdcategory{
+	text-align:center;
+	margin-left:1.6%; /*responsive divs required % ata instead of px*/
+	margin-bottom:0.5%;
+	padding-bottom:1%;
+	background-image:url("../assets/images/img_sandalsbanner.jpg");
+	width: 48%;
+	padding-top:14.5%;
+	display:inline-block;float:none;
+}
+.fourthcategory{
+	text-align:center;
+	margin-left:0.5%;
+	margin-bottom:0.5%;
+	padding-bottom:1%;
+	background-image:url("../assets/images/img_slippersbanner.jpg");
+	width: 48%;
+	padding-top:13%;
+	display:inline-block;float:none;
+}
+.categories{
+	color:#FFFCFC;
+}
+/*CATEGORIES*/
+.divider{
+	margin: 20px 0;	
+}
+hr{
+	border: solid 1px #eee;	
+}
+/*SLIDER*/
+#slider4image h1{
+	
+	text-shadow: 1px 0px #D1D1D1;
+}
+/*SLIDER*/
+/*FOOTER*/
+#designedby{
+	font-size:12px;
+	margin-left:5px;
+	margin-top: 5px;
+}
+#backtotop{
+	font-size:12px;
+	margin-right:5px;
+	margin-top: 5px;
+}
+footer{
+	color:#FFFCFC;
+	background:#111111;
+	padding: 5px;
+}
+/*FOOTER*/
+/*LOGIN*/
+.loginmenu{
+	padding-left: 10px;	
+	padding-right: 10px;	
+	font-size:12px;
+}
+.loginmenu2{
+	padding-left: 10px;	
+	padding-right: 10px;
+	padding-top: 10px;	
+}
+
+.loginmenu input{
+	height: 25px;
+	font-size:12px;
+}
+
+.loginmenu2 button{
+	font-size:12px;
+	color:#FFFFFF;
+	background-color:#111111;
+	padding-top: 5px;
+	padding-left: 10px;	
+	padding-right: 10px;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+.loginmenu h5{
+	font-size:12px;
+}
+
