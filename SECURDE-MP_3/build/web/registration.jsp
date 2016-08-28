@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Sign Up</title>
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/normalizeREGISTRATION.css">
         <link rel="stylesheet" href="css/styleREGISTRATION.css">
     </head>
     <body>

@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Stewrat
  */
-@WebServlet(urlPatterns = {"/loginServlet", "/registerServlet", "/categoryServlet", "/checkoutServlet"})
+@WebServlet(urlPatterns = {"/loginServlet", "/registerServlet", "/categoryServlet", "/checkoutServlet", "/operatorServlet"})
 public class Controller extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -89,6 +89,10 @@ public class Controller extends HttpServlet {
                 break;
             case "/checkoutServlet":
                 CheckoutProcess.checkout(request, response);
+                break;
+            case "/operatorServlet":
+                OperatorProcess.operate(request, response);
+                break;
             default:
                 throw new AssertionError();
         }

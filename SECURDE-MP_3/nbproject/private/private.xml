@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/src/java/Controller/Controller.java</file>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/web/registration.jsp</file>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/src/java/Controller/LoginProcess.java</file>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/src/java/Controller/RegisterProcess.java</file>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/web/index.jsp</file>
+            <file>file:/D:/Toolbox/NetBeansProject/SECURDE-MP_3/src/java/Controller/OperatorProcess.java</file>
+        </group>
     </open-files>
 </project-private>

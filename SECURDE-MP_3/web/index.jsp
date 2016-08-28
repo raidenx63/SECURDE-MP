@@ -16,6 +16,38 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <script src="jquery-3.1.0.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $("#regButton").click(function(){
+                    $("#belowmenubar").load("registration.jsp");
+                });
+                
+                $("#loginForm").submit(function event() {
+                    event.preventDefault();
+
+                    var $form = $(this);
+
+                    var request = $.ajax({
+                        type: $form.attr('method'),
+                        url: $form.attr('action'),
+                        data: $form.serialize()
+                    });
+                    
+                    request.done(function(data){
+                        $("#belowmenubar").html(data);
+                    });
+                    
+                    request.fail(function(jqXHR, textStatus){
+                        alert( "Request failed: " + textStatus );
+                    });
+                })
+            });
+
+        </script>
     </head>
     <body>
         <!--HEADER-->
@@ -61,10 +93,10 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="assets/images/img_menubutton.png"></img><span class="caret"></span></a>
                             <ul class="dropdown-menu" >
-                                <form action="loginServlet" method="post">
-                                    <li class="loginmenu"><h5>Username: </h5><input type="text" class="form-control" placeholder="" name="username"></li>
-                                    <li class="loginmenu"><h5>Password: </h5><input type="password" class="form-control" placeholder="" name="password"></li>
-                                    <li class="loginmenu2"><input type="submit" class="btn btn-default btn-sm" value="Log-in"> <button type="button" class="btn btn-default btn-sm" onclick="location.href = 'registration.jsp'">Register</button></li>
+                                <form id="loginForm" action="loginServlet" method="post">
+                                    <li class="loginmenu"><h5>Username: </h5><input id="uname" type="text" class="form-control" placeholder="" name="username" required="true"></li>
+                                    <li class="loginmenu"><h5>Password: </h5><input id="pword" type="password" class="form-control" placeholder="" name="password" required="true"></li>
+                                    <li class="loginmenu2"><input type="submit" class="btn btn-default btn-sm" value="Log-in"> <button id="regButton" type="button" class="btn btn-default btn-sm">Register</button></li>
                                 </form>
                             </ul>
                         </li>
@@ -74,7 +106,7 @@
         </nav>
         <!--END HEADER-->
         <!--SLIDER-->
-        <div class="belowmenubar">
+        <div class="belowmenubar" id="belowmenubar">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
